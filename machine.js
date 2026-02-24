@@ -11,6 +11,7 @@ const filterButtons = document.querySelectorAll(".filter-btn")
 
 
 
+
 // Counter Function
 
 function updateCounts(){
@@ -36,6 +37,8 @@ function updateCounts(){
 updateCounts();
 
 
+
+
 // Status Change Function
 
 function changeStatus (card, newStatus){
@@ -55,6 +58,8 @@ function changeStatus (card, newStatus){
 }
 
 
+
+
 // Interview Button
 
 const interviewButton = document.querySelectorAll(".interview-btn");
@@ -66,6 +71,8 @@ interviewButton.forEach(function(button){
     });
 });
 
+
+
 // Rejected Button
 
 const rejectedButton = document.querySelectorAll(".rejected-btn");
@@ -76,6 +83,8 @@ rejectedButton.forEach(function(button){
         changeStatus(card, 'rejected');
     });
 });
+
+
 
 
 
@@ -121,6 +130,7 @@ filterButtons.forEach(function(button){
         visibleCountText.innerText = visibleCount
     })
 })
+
 
 
 // Trash or Delete Section
